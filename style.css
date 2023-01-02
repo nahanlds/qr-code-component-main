@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+:root {
+    --color-White: hsl(0, 0%, 100%);
+    --color-Light-gray: hsl(212, 45%, 89%);
+    --color-Grayish-blue: hsl(220, 15%, 55%);
+    --color-Dark-blue: hsl(218, 44%, 22%);
+}
+
 
 body {
-    background-color: hsla(219, 15%, 55%, 0.288);
+    background-color: var(--color-Light-gray);
     margin: 0;
     text-align: center;
     display: flex;
@@ -19,23 +26,25 @@ body {
     }
     .card {
         text-align: center;
-        background-color: white;
-        margin: 35px 25px;
-        width: 340px;
+        background-color: var(--color-White);
+        margin: 50px 25px;
+        width: 300px;
         border-radius: 15px;
     }
 
 
-    .card h2 {
+    .card h1 {
+        font-size: 30px;
         padding: 15px;
         margin: 0;
-        color: hsl(218, 44%, 22%);
+        color: var(--color-Dark-blue);
     }
+
     .card p {
         font-size: 15px;
         padding: 0 20px 26px;
         margin: 0;
-        color: hsl(220, 15%, 55%);
+        color: var(--color-Grayish-blue);
     }
 }
 
@@ -43,8 +52,12 @@ body {
     body {
         margin: 100px;
     }
+    .card {
+        width: 400px;
+    }
 
     .card p {
-        padding: 30px;
+        padding: 15px 25px 40px;
+        font-size: 16px;
     }
 }
